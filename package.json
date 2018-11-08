@@ -1,0 +1,28 @@
+{
+  "name": "simple-list-api",
+  "version": "1.0.0",
+  "description": "This is a simple Api restful with node, mongo and express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BersnardC/simple-list-api.git"
+  },
+  "keywords": [
+    "Api",
+    "Restful"
+  ],
+  "author": "bersnardc@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BersnardC/simple-list-api/issues"
+  },
+  "homepage": "https://github.com/BersnardC/simple-list-api#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.3.10",
+    "morgan": "^1.9.1"
+  }
+}
