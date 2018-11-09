@@ -23,7 +23,7 @@ router.post('/tasks/create', tasksCtrl.createTask);
 // router.post('/task/update', tasksCtrl.Task);
 
 // // delete a Task by id
-// router.delete('/task/destroy/:id', tasksCtrl.Task);
+//router.get('/tasks/destroy/:id', tasksCtrl.deleteTask);
 
 //export routes
 module.exports = router;

@@ -14,7 +14,8 @@ tasksCtrl.createTask = async (req, res) => {
     	res.json({'status':'Task saved '})
     }
     catch(err) {
-        res.send('500: Internal Server Error', 500);
+        var invalidParamters = '{status:500,errors:[{ValidationsError: { name: [string, required], priority:[number, requerid], dueDate:[date, required] }}]'
+        res.json(invalidParamters, 500);
     }
 	
 }
@@ -25,17 +26,17 @@ tasksCtrl.getTask = async (req, res) => {
 	res.json(task) 
 }
 
-tasksCtrl.updateTask = function (req, res) {
-	const { id } = req.params;
-	const task = {
-		name: req.body.name,
-		position: req.body.priority,
-		office: req.body.due_date,
-	}
-	//Tasks.findByIdAndUpdate(id, )
-}
-tasksCtrl.deleteTask = function () {
-	console.log('en delete')
-}
+// tasksCtrl.updateTask = function (req, res) {
+// 	const { id } = req.params;
+// 	const task = {
+// 		name: req.body.name,
+// 		position: req.body.priority,
+// 		office: req.body.due_date,
+// 	}
+// 	//Tasks.findByIdAndUpdate(id, )
+// }
+// tasksCtrl.deleteTask = function () {
+// 	console.log('en delete')
+// }
 
 module.exports = tasksCtrl;
